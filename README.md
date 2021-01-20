@@ -1,8 +1,6 @@
 # IT304S_Grupo10_UFPR
 Projeto de Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR
 
-# Model for Project Presentation and Folder Structure (in Portuguese)
-
 # Estrutura de Arquivos e Pastas
 
 A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
@@ -128,6 +126,8 @@ Ferramenta 2 | http://ferramenta2.org/ | `<Descrição da Ferramenta 2 e para qu
 <Abordagem/metodologia adotada, incluindo especificação de quais técnicas foram exploradas, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas.>
 ~~~
 
+
+
 ## Detalhamento do Projeto
 ~~~
 <Apresente aqui detalhes da análise. Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
@@ -153,6 +153,8 @@ plt.show();
 
 A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
 ~~~
+
+
 
 # Conclusões
 ~~~
