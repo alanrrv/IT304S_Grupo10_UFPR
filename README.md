@@ -66,7 +66,7 @@ Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Tudo
 
 # Modelo para Apresentação do Projeto
 
-# Projeto `<Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR>`
+# Projeto `Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR`
 # Project `<Title in English>`
 
 # Descrição Resumida do Projeto
@@ -84,10 +84,10 @@ As contratações de energia no mercado livre tem demonstrado vantagem financeir
 ~~~
 
 # Equipe
-* `<Alan Ramos Rodrigues do Vale>` - `<233136>`
-* `<Diogo Schuarz>` - `<RA>`
-* `<Henrique>` - `<RA>`
-* `<Rafael Rosolen>` - `<RA>`
+* `Alan Ramos Rodrigues do Vale` - `233136`
+* `Diogo Schuarz` - `<RA>`
+* `Henrique` - `<RA>`
+* `Rafael Rosolen` - `<RA>`
 
 # Vídeo do Projeto
 `<coloque um link para o vídeo apresentado o projeto.>`
@@ -131,6 +131,8 @@ como volume, flexibilidade, modulação, sazonalização)
 ## Objetivos do projeto
 ~~~
 <Como seu projeto propôs abordar o problema apresentado.>
+O projeto pretende apresentar os valores da economia estimada ao migrar as unidades consumidoras escolhidas para o mercado livre de energia realizando previsões de consumo, demanda e valor da tarifa, simulando os custos de faturas de energia para os próximos 2 anos.
+
 ~~~
 
 # Recursos e Métodos
