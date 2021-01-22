@@ -92,6 +92,7 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 # Introdução e Motivação
 ~~~
 <Descrição do tema do projeto, incluindo motivação, contexto gerador e caracterização do problema. A introdução também pode apresentar iniciativas correlatas para lidar com o problema (não obrigatório) e deve introduzir de forma mais detalhada que o resumo a solução proposta e resultados alcançados. Aqui também são apresentadas as seções do projeto.>
+~~~
 
 Descriçao do Tema: Mercado Livre de Energia. Possibilidade de alcançar reduções de até 30% nas faturas de energia. 
 
@@ -101,7 +102,6 @@ Contexto gerador: Até 1995 o mercado de energia no Brasil era basicamente estat
 
 Problema: Alto custo com energia elétrica
 
-~~~
 
 ## Perguntas de Pesquisa
 
