@@ -183,6 +183,83 @@ plt.show();
 A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
 ~~~
 
+1. Qual é a universidade pesquisada? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
+
+A UNIVERSIDADE FEDERAL DO PARANÁ - UFPR, localizada no estado do Paraná, possui 164 cursos de graduação, 45 cursos de especialização, 89 mestrados e 61 doutorados. São quase 28 mil estudantes da graduação, e outros 6,2 mil da pós-graduação.
+Fonte: <https://g1.globo.com/pr/parana/educacao/noticia/2019/09/26/mais-de-34-mil-alunos-da-ufpr-podem-ficar-sem-aulas-ainda-neste-ano-diz-instituicao.ghtml>.
+
+Possui um gasto mensal médio de energia na ordem de R$1 milhão considerando todas as suas Unidades Consumidoras atendidas pela distribuidora COPEL. Suas unidades estão inseridas no Grupo A4 (13,8kV) e B. Das  Unidades Consumidoras da UFPR, consideramos trabalhar com as 5 listadas abaixo:
+
+
+UC | Nome do Campus | Distribuidora | Subgrupo | Endereço
+------ | -------------------- | ----- | --- | ------------------------------
+19450729 | CENTRO POLITÉCNICO - UFPR | COPEL |  A4 | RODOVIA BR 116 - JARDIM DAS AMÉRICAS - CURITIBA - PR
+44895780 | SUBSEDE DA SAÚDE - UFPR | COPEL | A4 | AV. PREF LOTHARIO MEISSNER, 632 - J. BOTANICO - CURITIBA - PR - CEP 80210-170
+1936905 | SETOR DE CIENCIAS AGRARIAS - UFPR | COPEL | A4 |R JAIME BALAO, 675 - HUGO LANGE - CURITIBA - PR - CEP: 80040-340
+79888534 | PALOTINA - UFPR | COPEL | A4 | R PIONEIRO, 2153 - DALLAS - PALOTINA - PR - CEP: 85950-000
+44860480 | SETOR DE CIENCIAS DA SAUDE - UFPR | COPEL | A4 | R PE CAMARGO, 280 - ALTO DA GLORIA - CURITIBA - PR - CEP: 80060-240
+
+
+2. Qualidade dos dados: há dados faltantes? Há consumo atípico em algum mês?
+
+Não há dados faltantes. O consumo atípico ocorre a partir de Abril/2020 devido a pandemia do COVID-19.
+Devido este padrão verificado neste relatório será avaliado o uso de dados anteriores, ainda focando no uso de dados referentes a um período de 36 meses, visto que é possível identificar a sazonalidade.
+
+
+3. Análise de Demanda: a Demanda Contratada está adequada? Qual deveria ser a demanda?
+
+Tabela 1 - Análise da demanda contratada comparada com a demanda registrada
+
+UC | Demanda Média Contratada (kW)* | Demanda Faturada (kW) | Adequada? | Demanda Ajustada (kW)
+-- | ---- | ---- | ---- | -----
+1 | 1882 | 2100 | Não | 2000
+2 | 442 | 220 | Não | 480
+3 | 338 | 380 | Sim | N/A
+4 | 373 | 500 | Não | 425
+5 | 117 | 130 | Sim | N/A
+
+*Excluiram-se os meses de pandemia.
+
+Portanto, verfica-se que das 5 unidades consumidoras avaliadas, 3 necessitam de ajustes na demanda.
+
+4. Análise de Reativos: Há excesso de reativos? É necessário fazer correção do fator de potência da instalação?
+
+
+UC |  DEMANDA MÉDIA REATIVA PONTA [KVAR] | DEMANDA MÉDIA REATIVA FORA PONTA [KVAR]
+-- | --------------- | -----------
+1 |  37,21 | 333,50
+2 | 515,08 | 6703,83
+3 | 418,00 | 2654,71
+4 | 338,21 | 3107,79
+5 | 0,04 | 0,00
+
+Com exceção da UC 5, todas as outras necessitam fazer correção do fator de potência por excesso de reativos.
+
+
+5. Existe tendência de crescimento no consumo de energia? E na Demanda Registrada?
+
+Não há uma tendência clara para as Unidades Consumidoras estudadas. No entanto, temos uma expectativa pelo aumento tanto no Consumo quanto na Demanda Registrada para os próximos meses, haja vista a redução abrupta ocorrida desde abril/2020 devido à pandemia nas UCs 2, 3, 4 e 5, e novas tecnologias e equipamentos que podem vir a ser instalados no campus. 
+Notícias divulgadas recentemente apresentaram o projeto da usina fotovoltaica construída na UC1, portanto neste caso específico a expectativa é de redução do consumo.
+Fonte: https://www.ufpr.br/portalufpr/noticias/ufpr-inaugura-nesta-sexta-feira-a-maior-usina-fotovoltaica-em-universidade-publica-do-brasil/
+
+
+6. Gráficos com Demanda, Consumo de Energia.
+
+
+7. Outras análises que os alunos considerem pertinentes.
+
+As Unidades Consumidoras escolhidas representam juntas mais de 50% de todo consumo da UFPR consolidado.
+
+
+8. Vale a pena migrar para o Mercado Livre? Como consumidor livre ou especial?
+
+9. Qual é a economia estimada?
+
+10. Qual é o preço da energia a partir de quando compensa a migração?
+
+11. Qual a recomendação para uma contratação? (Características de contrato como volume, flexibilidade, modulação, sazonalização)
+
+12. Outras análises
 
 
 # Conclusões
