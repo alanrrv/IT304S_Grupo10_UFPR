@@ -83,7 +83,7 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 # Equipe
 * `Alan Ramos Rodrigues do Vale - RA 233136`
 * `Diogo Schuarz` - `<RA>`
-* `Henrique` - `<RA>`
+* `Henrique Carvalho - 233203`
 * `Rafael Rosolen` - `<RA>`
 
 # Vídeo do Projeto
@@ -172,6 +172,8 @@ sns.distplot(df.Hemoglobin);
 plt.show();
 ~~~
 
+
+
 ## Evolução do Projeto
 
 Iniciamos considerando a análise de dados de 2 anos, porém, o modelo ARIMA utilizado para realizar as previsões de Demanda(kW), Consumo(kWh) e Tarifa de Energia (R$) não se comportou como esperado. Consideramos que a baixa quantidade de dados impactou significamente as previsões, já que quando separamos em torno de 70% dos dados para treino e 30% para teste, não houve uma definição clara da sazonalidade e tendência, parâmetros estes relevantes para o ARIMA.
@@ -249,6 +251,7 @@ Fonte: https://www.ufpr.br/portalufpr/noticias/ufpr-inaugura-nesta-sexta-feira-a
 
 
 
+
 7. Outras análises que os alunos considerem pertinentes.
 
 As Unidades Consumidoras escolhidas representam juntas mais de 50% de todo consumo da UFPR consolidado.
@@ -266,7 +269,7 @@ A economia estimada é em torno de 10% com base na média do histórico, podendo
 
 10. Qual é o preço da energia a partir de quando compensa a migração?
 
-
+# XXXXXXXXXXX
 
 11. Qual a recomendação para uma contratação? (Características de contrato como volume, flexibilidade, modulação, sazonalização)
 
