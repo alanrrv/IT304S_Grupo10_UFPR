@@ -3,7 +3,7 @@ Projeto de Migração para o Mercado Livre de Energia da Universidade Federal do
 
 # Estrutura de Arquivos e Pastas
 
-A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
+Foi adotada a estrutura proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). A estrutura geral é a seguinte e será detalhada a seguir:
 
 ~~~
 ├── README.md          <- apresentação do projeto
@@ -22,17 +22,17 @@ A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cooki
 └── assets             <- mídias usadas no projeto
 ~~~
 
-Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
+O arquivo `README.md` contém a apresentação do projeto.
 
 ## `data`
 
-Dados utilizados no projeto respeitadas as possíveis implicações éticas, se você tiver licença para tal e se o volume for suportado pelo Github. Você pode optar por colocar um subconjunto ilustrativo dos dados.
+Dados utilizados no projeto respeitadas as implicações éticas.
 
-É importante que sejam colocados os dados originais (se for possível) para garantir a reprodutibilidade do processo. Os originais são colocados na subpasta `raw` se forem produzidos pela equipe e na subpasta `external` se forem de terceiros. Também podem ser colocados aqui dados intermediários (por exemplo, dados tratados, resumidos etc.) na pasta `interim`. Finalmente, coloque os dados finais que serviram de entrada para as suas análises na subpasta `processed`.
+Foram mantidos os dados originais para garantir a reprodutibilidade do processo. Os originais foram colocados na subpasta `raw`. Na subpasta `external` estão os dados de terceiros. Dados intermediários (por exemplo, dados tratados, resumidos etc.) estão na pasta `interim`. Os dados finais que serviram de entrada para as análises estão na subpasta `processed`.
 
 ## `notebooks`
 
-Código do seu projeto que pode ser executado online sem instalação de software, tal como um notebook em Jupyter ou equivalente.
+Código do projeto que pode ser executado online sem instalação de software, tal como um notebook em Jupyter.
 
 ## `src`
 
@@ -42,7 +42,7 @@ Se for código em linguagem de programação, tente organizá-lo de forma que se
 
 ## `assets`
 
-Qualquer mídia usada no seu projeto: vídeo, ilustrações, arquivos PDF etc.
+Qualquer mídia usada no projeto: vídeo, ilustrações, arquivos PDF, etc.
 
 # Modelo para Apresentação do Projeto
 
@@ -66,7 +66,7 @@ Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Tudo
 
 # Modelo para Apresentação do Projeto
 
-# Projeto `<Título em Português>`
+# Projeto `<Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR>`
 # Project `<Title in English>`
 
 # Descrição Resumida do Projeto
@@ -84,7 +84,10 @@ As contratações de energia no mercado livre tem demonstrado vantagem financeir
 ~~~
 
 # Equipe
-* `<nome completo>` - `<RA>`
+* `<Alan Ramos Rodrigues do Vale>` - `<233136>`
+* `<Diogo Schuarz>` - `<RA>`
+* `<Henrique>` - `<RA>`
+* `<Rafael Rosolen>` - `<RA>`
 
 # Vídeo do Projeto
 `<coloque um link para o vídeo apresentado o projeto.>`
@@ -97,6 +100,32 @@ As contratações de energia no mercado livre tem demonstrado vantagem financeir
 ## Perguntas de Pesquisa
 ~~~
 <Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.>
+
+1. Qual é a sua universidade? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
+
+2. Qualidade dos dados: há dados faltantes? Há consumo atípico em algum mês?
+
+3. Análise de Demanda: a Demanda Contratada está adequada? Qual deveria ser a demanda?
+
+4. Análise de Reativos: Há excesso de reativos? É necessário fazer correção do fator de potência da instalação?
+
+5. Existe tendência de crescimento no consumo de energia? E na Demanda Registrada?
+
+6. Gráficos com Demanda Contratada, Demanda Registrada, Consumo de Energia, etc.;
+
+7. Outras análises que os alunos considerem pertinentes.
+
+8. Vale a pena migrar para o Mercado Livre? Como consumidor livre ou especial?
+
+9. Qual é a economia estimada?
+
+10. Qual é o preço da energia a partir de quando compensa a migração?
+
+11. Qual a recomendação para uma contratação? (Características de contrato
+como volume, flexibilidade, modulação, sazonalização)
+
+12. Outras análises
+
 ~~~
 
 ## Objetivos do projeto
