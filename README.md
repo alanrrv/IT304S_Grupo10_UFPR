@@ -136,16 +136,19 @@ O projeto pretende apresentar os valores da economia estimada ao migrar as unida
 # Recursos e Métodos
 
 ## Bases de Dados
-`<Elencar bases de dados utilizadas no projeto preferencialmente no formato da tabela a seguir.>`
+
 Base de Dados | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
-Base 1 | http://base1.org/ | `<Descrição da Base 1 e para que ela foi usada no projeto.>`
-Base 2 | http://base2.org/ | `<Descrição da Base 2 e para que ela foi usada no projeto.>`
-PLD Médio | https://www.ccee.org.br/portal/faces/pages_publico/o-que-fazemos/como_ccee_atua/precos/precos_medios?_adf.ctrl-state=13um7ck11y_1&_afrLoop=55133515843248#!%40%40%3F_afrLoop%3D55133515843248%26_adf.ctrl-state%3D13um7ck11y_5
+
+Base 1 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/external/PLD_CCEE_HISTORICO.xlsx | Dados históricos do PLD na CCEE
+Base 2 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/tree/main/data/interim | Dados alterados para transformação
+Base 3 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/tree/main/data/processed/CONSUMO_2021.xlsx | Dados de consumo processados
+Base 4 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/tree/main/data/processed/DEMANDA_PONTA_2021.xlsx | Dados de Demanda processados
+Base 5 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/tree/main/data/processed/PLD_2021.xlsx | Dados de PLD processados
+
 
 ## Ferramentas
 
-`<Elencar ferramentas utilizadas no projeto preferencialmente no formato da tabela a seguir.>`
 Ferramenta | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
 Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b | Previsão de séries temporais com uso de ARIMA
@@ -163,6 +166,8 @@ Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-seri
 
 Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.>
 ~~~
+
+Foram analisados dados de Consumo, Demanda e PLD. A projeção desses valores para o futuro é fundamental para calcular a previsão de gastos com as faturas de energia. Segue parte do código usado para prever o preço do PLD até 2022:
 
 Projeção do PLD até 2022
 ---
@@ -201,8 +206,6 @@ Após isso, decidimos inserir mais 12 meses de dados para todas as unidades cons
 
 A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
 ~~~
-
-A apresentação dos resultados e sua discussão foi realizada diretamente no código, apresentando figuras e comentários conforme o programa é desenvolvido. Link para acessar o notebook desenvolvido: https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/notebooks/IT304S_GRUPO_10.ipynb
 
 1. Qual é a universidade pesquisada? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
 
