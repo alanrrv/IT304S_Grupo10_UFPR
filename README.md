@@ -82,9 +82,9 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 
 # Equipe
 * `Alan Ramos Rodrigues do Vale - RA 233136`
-* `Diogo Schuarz` - `<RA>`
+* `Diogo Schuarz - RA 159671`
 * `Henrique Carvalho - 233203`
-* `Rafael Rosolen` - `<RA>`
+* `Rafael Augusto de Godoy Rosolen - RA 261565`
 
 # Vídeo do Projeto
 `<coloque um link para o vídeo apresentado o projeto.>`
