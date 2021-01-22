@@ -141,13 +141,15 @@ Base de Dados | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
 Base 1 | http://base1.org/ | `<Descrição da Base 1 e para que ela foi usada no projeto.>`
 Base 2 | http://base2.org/ | `<Descrição da Base 2 e para que ela foi usada no projeto.>`
+Base 3 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/external/PLD_CCEE_HISTORICO.xlsx | Dados históricos do PLD na CCEE
+Base
 
 ## Ferramentas
 
 `<Elencar ferramentas utilizadas no projeto preferencialmente no formato da tabela a seguir.>`
 Ferramenta | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
-Ferramenta 1 | http://ferramenta1.org/ | `<Descrição da Ferramenta 1 e para que ela foi usada no projeto.>`
+Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b | Análise temporal de
 Ferramenta 2 | http://ferramenta2.org/ | `<Descrição da Ferramenta 2 e para que ela foi usada no projeto.>`
 
 # Metodologia
@@ -172,9 +174,9 @@ plt.show();
 ~~~
 
 ## Evolução do Projeto
-~~~
-<Relate a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.>
-~~~
+
+Iniciamos considerando a análise de dados de 2 anos, porém, o modelo ARIMA utilizado para realizar as previsões de Demanda(kW), Consumo(kWh) e Tarifa de Energia (R$) não se comportou como esperado. Consideramos que a baixa quantidade de dados impactou significamente as previsões, já que quando separamos em torno de 70% dos dados para treino e 30% para teste, não houve uma definição clara da sazonalidade e tendência, parâmetros estes relevantes para o ARIMA.
+Após isso, decidimos inserir mais 12 meses de dados para todas as unidades consumidoras, ficando 24 para dados de treino e 12 meses para teste.
 
 # Resultados e Discussão
 ~~~
