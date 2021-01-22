@@ -67,21 +67,18 @@ Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Tudo
 # Modelo para Apresentação do Projeto
 
 # Projeto `Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR`
-# Project `<Title in English>`
+# Project `Migration to the Free Energy Market of Federal University of Parana - UFPR`
 
 # Descrição Resumida do Projeto
-~~~
-<Descreva resumidamente o que fará o projeto. O resumo idealmente deve: apresentar o contexto; indicar o problema; apresentar a sua solução para o problema; indicar porque a sua solução é melhor do que os esforços atuais (não obrigatório); concluir com os resultados alcançados.>
-~~~
 
-Foram selecionadas as 5 unidades consumidoras que mais consomem energia da UFPR com intuito de realizar análise de viabilidade econômica para migração destas unidades para o Mercado Livre de Energia, haja vista estas unidades serem elegíveis para a migração.
-As contratações de energia no mercado livre tem demonstrado vantagem financeira perante as contratações no mercado regulado.
-
+As 5 unidades consumidoras que mais consomem energia da UFPR foram selecionadas com intuito de realizar análise de viabilidade econômica para migração destas unidades para o Mercado Livre de Energia, haja vista estas unidades serem elegíveis para a migração de acordo com a legislação em vigor.
+As contratações de energia no mercado livre tem demonstrado vantagem financeira perante as contratações no mercado regulado. O projeto alcançou projeções de economia na ordem de 10 a 30% com a migração quando comparado a contratação atual no mercado regulado.
 
 # Abstract in English
-~~~
-<English version of the abstract.>
-~~~
+
+The 5 consumer units that most consume energy from UFPR were selected in order to carry out an economic feasibility analysis for the migration of these units to the Free Energy Market, since these units are eligible for migration according to the legislation in force.
+Energy contracting in the free market has demonstrated a financial advantage over contracting in the regulated market. The project achieved projections of savings in the order of 10 to 30% with migration when compared to the current contract in the regulated market.
+
 
 # Equipe
 * `Alan Ramos Rodrigues do Vale` - `233136`
@@ -98,10 +95,8 @@ As contratações de energia no mercado livre tem demonstrado vantagem financeir
 ~~~
 
 ## Perguntas de Pesquisa
-~~~
-<Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.>
 
-1. Qual é a sua universidade? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
+1. Qual é a universidade pesquisada? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
 
 2. Qualidade dos dados: há dados faltantes? Há consumo atípico em algum mês?
 
@@ -126,14 +121,9 @@ como volume, flexibilidade, modulação, sazonalização)
 
 12. Outras análises
 
-~~~
-
 ## Objetivos do projeto
-~~~
-<Como seu projeto propôs abordar o problema apresentado.>
-O projeto pretende apresentar os valores da economia estimada ao migrar as unidades consumidoras escolhidas para o mercado livre de energia realizando previsões de consumo, demanda e valor da tarifa, simulando os custos de faturas de energia para os próximos 2 anos.
 
-~~~
+O projeto pretende apresentar os valores da economia estimada ao migrar as unidades consumidoras escolhidas para o mercado livre de energia realizando previsões de consumo, demanda e valor da tarifa, simulando os custos de faturas de energia elétrica para os próximos 2 anos.
 
 # Recursos e Métodos
 
