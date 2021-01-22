@@ -149,8 +149,7 @@ Base
 `<Elencar ferramentas utilizadas no projeto preferencialmente no formato da tabela a seguir.>`
 Ferramenta | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
-Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b | Análise temporal de
-Ferramenta 2 | http://ferramenta2.org/ | `<Descrição da Ferramenta 2 e para que ela foi usada no projeto.>`
+Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b | Previsão de séries temporais com uso de ARIMA
 
 # Metodologia
 ~~~
@@ -248,6 +247,8 @@ Fonte: https://www.ufpr.br/portalufpr/noticias/ufpr-inaugura-nesta-sexta-feira-a
 6. Gráficos com Demanda, Consumo de Energia.
 
 
+
+
 7. Outras análises que os alunos considerem pertinentes.
 
 As Unidades Consumidoras escolhidas representam juntas mais de 50% de todo consumo da UFPR consolidado.
@@ -286,4 +287,4 @@ Ainda assim, o modelo ARIMA não conseguiu apresentar uma convergência para os 
 
 # Trabalhos Futuros
 
-
+Desenvolver métodos para contratar energia no Mercado Livre em órgãos públicos sob a ótica da Lei das Licitações - Lei 8.666/1993, considerando alguns aspectos como tempestividade de processos licitatórios, prestação de garantias, entre outros.
