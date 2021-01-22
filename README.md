@@ -66,22 +66,22 @@ Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Tudo
 
 # Modelo para Apresentação do Projeto
 
-# Projeto `Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR`
-# Project `Migration to the Free Energy Market of Federal University of Parana - UFPR`
+# Projeto Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR
+# Project Migration to the Free Energy Market of Federal University of Parana - UFPR
 
 # Descrição Resumida do Projeto
 
 As 5 unidades consumidoras que mais consomem energia da UFPR foram selecionadas com intuito de realizar análise de viabilidade econômica para migração destas unidades para o Mercado Livre de Energia, haja vista estas unidades serem elegíveis para a migração de acordo com a legislação em vigor.
 As contratações de energia no mercado livre tem demonstrado vantagem financeira perante as contratações no mercado regulado. O projeto alcançou projeções de economia na ordem de 10 a 30% com a migração quando comparado a contratação atual no mercado regulado.
 
-# Abstract in English
+# Abstract
 
 The 5 consumer units that most consume energy from UFPR were selected in order to carry out an economic feasibility analysis for the migration of these units to the Free Energy Market, since these units are eligible for migration according to the legislation in force.
 Energy contracting in the free market has demonstrated a financial advantage over contracting in the regulated market. The project achieved projections of savings in the order of 10 to 30% with migration when compared to the current contract in the regulated market.
 
 
 # Equipe
-* `Alan Ramos Rodrigues do Vale` - `233136`
+* `Alan Ramos Rodrigues do Vale - RA 233136`
 * `Diogo Schuarz` - `<RA>`
 * `Henrique` - `<RA>`
 * `Rafael Rosolen` - `<RA>`
@@ -92,6 +92,15 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 # Introdução e Motivação
 ~~~
 <Descrição do tema do projeto, incluindo motivação, contexto gerador e caracterização do problema. A introdução também pode apresentar iniciativas correlatas para lidar com o problema (não obrigatório) e deve introduzir de forma mais detalhada que o resumo a solução proposta e resultados alcançados. Aqui também são apresentadas as seções do projeto.>
+
+Descriçao do Tema: Mercado Livre de Energia. Possibilidade de alcançar reduções de até 30% nas faturas de energia. 
+
+Motivaçao: Universidade é elegível para acessar o mercado livre há anos. Desde 2019, clientes com demanda contratada maior ou igual a 3.000kW eram elegíveis para a migração e a partir de Jan/2021, de acordo com a Portaria 465/2019 do Ministério de Minas e Energia, consumidores com demanda mínima contratada de 1.500kW passam a ser elegíveis a migrar para o mercado livre.
+
+Contexto gerador: 
+
+Problema: Alto custo com energia elétrica 
+
 ~~~
 
 ## Perguntas de Pesquisa
