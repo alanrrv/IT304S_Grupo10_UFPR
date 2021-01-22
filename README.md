@@ -248,8 +248,17 @@ Fonte: https://www.ufpr.br/portalufpr/noticias/ufpr-inaugura-nesta-sexta-feira-a
 
 6. Gráficos com Demanda, Consumo de Energia.
 
+Demanda Registrada
+---
+![alt text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/Demanda_Registrada.png)
 
+Consumo Registrado
+---
+![alt_texte](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/Consumo_registrado.png)
 
+PLD Histórico
+---
+![alt_texte](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/PLD_historico.png)
 
 
 7. Outras análises que os alunos considerem pertinentes.
