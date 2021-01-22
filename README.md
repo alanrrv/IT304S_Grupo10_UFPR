@@ -165,19 +165,35 @@ Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-seri
 Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.>
 ~~~
 
+Projeção do PLD até 2022
+---
 ~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
+pred_uc = results.get_forecast(steps=36)
+pred_ci = pred_uc.conf_int()
+ax = df_input_orig['2017':].plot(label='Observado', figsize=(14, 7))
+pred_uc.predicted_mean.plot(ax=ax, label='Projeção')
+ax.fill_between(pred_ci.index,
+                pred_ci.iloc[:, 1],
+                39, color='k', alpha=.25)
+
+ax.set_title('Projeção com método ARIMA para a média do PLD até 2022', fontsize = 30)
+ax.set_xlabel('Data')
+ax.set_ylabel('Preço médio PLD [R$]')
+plt.legend()
+plt.show()
 ~~~
+
+![alt text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/Previsao_PLD.png)
+
+Código Completo
+----
 
 https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/notebooks/IT304S_GRUPO_10.ipynb
 
 
 ## Evolução do Projeto
 
-Iniciamos considerando a análise de dados de 2 anos, porém, o modelo ARIMA utilizado para realizar as previsões de Demanda(kW), Consumo(kWh) e Tarifa de Energia (R$) não se comportou como esperado. Consideramos que a baixa quantidade de dados impactou significamente as previsões, já que quando separamos em torno de 70% dos dados para treino e 30% para teste, não houve uma definição clara da sazonalidade e tendência, parâmetros estes relevantes para o ARIMA.
+Iniciamos considerando a análise de dados de 2 anos, porém, o modelo ARIMA utilizado para realizar as previsões de Demanda(kW), Consumo(kWh) e Tarifa de Energia (R$) não se comportou como esperado. Consideramos que a baixa quantidade de dados impactou significativamente as previsões, já que quando separamos em torno de 70% dos dados para treino e 30% para teste, não houve uma definição clara da sazonalidade e tendência, parâmetros estes relevantes para o ARIMA.
 Após isso, decidimos inserir mais 12 meses de dados para todas as unidades consumidoras, ficando 24 para dados de treino e 12 meses para teste.
 
 # Resultados e Discussão
