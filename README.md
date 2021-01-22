@@ -172,6 +172,7 @@ sns.distplot(df.Hemoglobin);
 plt.show();
 ~~~
 
+https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/notebooks/IT304S_GRUPO_10.ipynb
 
 
 ## Evolução do Projeto
