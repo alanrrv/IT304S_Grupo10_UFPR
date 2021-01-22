@@ -96,7 +96,7 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 
 O Mercado Livre de Energia tem se tornado atrativo para consumidores de energia de médio e grande porte como é o caso da maioria das universidades públicas do país. A adesão ao Mercado Livre (ML) possibilita alcançar reduções de até 30% nas faturas de energia.
 
-A Universidade Federal do Paraná - UFPR com demanda somatório de Demanda Contratada acima de 3.000kW é elegível para acessar o mercado livre há anos. Desde 2019, clientes com demanda contratada maior ou igual a 3.000kW eram elegíveis para a migração e a partir de Jan/2021, de acordo com a Portaria 465/2019 do Ministério de Minas e Energia, consumidores com demanda mínima contratada de 1.500kW passam a ser elegíveis a migrar para o Mercado Livre.
+A Universidade Federal do Paraná - UFPR com somatório de Demanda Contratada acima de 3.000kW é elegível para acessar o mercado livre há anos. Até 2019, clientes com demanda contratada maior ou igual a 3.000kW eram elegíveis para a migração e a partir de Jan/2021, de acordo com a Portaria 465/2019 do Ministério de Minas e Energia, consumidores com demanda mínima contratada de 1.500kW passam a ser elegíveis a migrar para o Mercado Livre.
 
 Até 1995 o mercado de energia no Brasil era basicamente estatal. A expansão do sistema necessitava de investimento público, ocorriam paralisações em obras, tarifas defasadas e os investimentos eram insuficientes. Entre 1995 e 2001 o governo federal realizou privatizações no setor elétrico, criou instituições como ANEEL, ONS, CCEE entre outras que viabilizaram a partir de 2001 a adoção de ambientes de contratação de energia que podem ser regulado (ACR) com agentes de geração e de distribuição de energia ou livre (ACL) com geradores, distribuidores, comercializadores, importadores e exportadores, além dos consumidores livres e especiais. Há ainda o mercado de curto prazo, também conhecido como mercado de diferenças, no qual se promove o ajuste entre os volumes contratados e os volumes medidos de energia.
 
@@ -125,8 +125,7 @@ A UFPR apresenta um gasto com energia elétrica na ordem de dezenas de milhões 
 
 10. Qual é o preço da energia a partir de quando compensa a migração?
 
-11. Qual a recomendação para uma contratação? (Características de contrato
-como volume, flexibilidade, modulação, sazonalização)
+11. Qual a recomendação para uma contratação? (Características de contrato como volume, flexibilidade, modulação, sazonalização)
 
 12. Outras análises
 
@@ -192,7 +191,5 @@ A discussão dos resultados também pode ser feita aqui na medida em que os resu
 ~~~
 
 # Trabalhos Futuros
-~~~
-<Indique trabalhos futuros a partir do ponto alcançado.>
-~~~
 
+Desenvolver modelos para contratar energia no Mercado Livre em órgãos públicos sob a ótica da Lei das Licitações - Lei 8.666/1993, considerando alguns aspectos como tempestividade de processos licitatórios, prestação de garantias, entre outros.
