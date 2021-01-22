@@ -139,7 +139,6 @@ O projeto pretende apresentar os valores da economia estimada ao migrar as unida
 
 Base de Dados | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
-
 Base 1 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/external/PLD_CCEE_HISTORICO.xlsx | Dados históricos do PLD na CCEE
 Base 2 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/tree/main/data/interim | Dados alterados para transformação
 Base 3 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/tree/main/data/processed/CONSUMO_2021.xlsx | Dados de consumo processados
@@ -167,7 +166,7 @@ Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-seri
 Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.>
 ~~~
 
-Foram analisados dados de Consumo, Demanda e PLD. A projeção desses valores para o futuro é fundamental para calcular a previsão de gastos com as faturas de energia. Segue parte do código usado para prever o preço do PLD até 2022:
+Foram analisados dados de Consumo, Demanda e PLD. A projeção desses valores é fundamental para calcular a previsão de gastos com as faturas de energia. Segue parte do código usado para prever o preço do PLD até 2022:
 
 Projeção do PLD até 2022
 ---
