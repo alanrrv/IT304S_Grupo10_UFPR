@@ -255,20 +255,35 @@ As Unidades Consumidoras escolhidas representam juntas mais de 50% de todo consu
 
 8. Vale a pena migrar para o Mercado Livre? Como consumidor livre ou especial?
 
+Considerando uma economia estimada em torno de 10% somente considerando a média 
+
+
 9. Qual é a economia estimada?
+
+A economia estimada é em torno de 10% com base na média do histórico, podendo ser otimizada capturando sazonalidade na contração de energia.
+
 
 10. Qual é o preço da energia a partir de quando compensa a migração?
 
+
+
 11. Qual a recomendação para uma contratação? (Características de contrato como volume, flexibilidade, modulação, sazonalização)
+
+Quando consdierado contratação no mercado de longo prazo, a economia utilizando a média histórica fica em torno de 10% e há redução de custo com gestão de contrato. Deverá ser sazonal (20%), de acordo com o apetite ao risco do mercado curto prazo. Uso de licitação (30%), compra de energia mais em conta.
+
 
 12. Outras análises
 
 
+
 # Conclusões
-~~~
-<Apresente aqui as conclusões finais do trabalho e as lições aprendidas.>
-~~~
+
+O modelo de AutoRegressive Integrated Moving Average (ARIMA) apresentou um comportamento adequado quando utilizado na projeção do PLD. Embora apresente valores mínimos inferiores 0 e que assim seriam inferiores ao piso do PLD para o período, o algoritmo foi capaz de compreender a existência de uma faixa onde a grandeza permanece variando. A capacidade de identificar esse comportamento é algo positivo e importante para previsão dos preços em um horizonte de curto a médio prazo.
+
+Para as grandezas avaliadas Consumo Total, Demanda Ponta e Demanda Fora Ponta, o modelo ARIMA conseguiu apresentar uma previsão pelo menos razoável, podendo fornecer insumos para contratação de energia como janelas de sazonalidade de consumo elevado e consumo baixo, o mesmo se aplica para demanda.
+
+Ainda assim, o modelo ARIMA não conseguiu apresentar uma convergência para os valores máximos e mínimos das grandezas Consumo Total, Demanda Ponta e Demanda Fora Ponta. Este ponto pode ser melhorado utilizando outros métodos de projeção, um ínicio seria utilizando o modelo Prophet do Facebook, pois é um modelo capaz de capturar com facilidade sazonalidades. No entanto, sua aplicação neste caso precisa ser melhor avaliada, pois o Prophet é um modelo preparado para receber Big Data, algo que pode não compreender muito bem se tiver poucos dados.
 
 # Trabalhos Futuros
 
-Desenvolver modelos para contratar energia no Mercado Livre em órgãos públicos sob a ótica da Lei das Licitações - Lei 8.666/1993, considerando alguns aspectos como tempestividade de processos licitatórios, prestação de garantias, entre outros.
+
