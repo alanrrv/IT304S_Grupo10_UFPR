@@ -100,7 +100,7 @@ A Universidade Federal do Paraná - UFPR com somatório de Demanda Contratada ac
 
 Até 1995 o mercado de energia no Brasil era basicamente estatal. A expansão do sistema necessitava de investimento público, ocorriam paralisações em obras, tarifas defasadas e os investimentos eram insuficientes. Entre 1995 e 2001 o governo federal realizou privatizações no setor elétrico, criou instituições como ANEEL, ONS, CCEE entre outras que viabilizaram a partir de 2001 a adoção de ambientes de contratação de energia que podem ser regulado (ACR) com agentes de geração e de distribuição de energia ou livre (ACL) com geradores, distribuidores, comercializadores, importadores e exportadores, além dos consumidores livres e especiais. Há ainda o mercado de curto prazo, também conhecido como mercado de diferenças, no qual se promove o ajuste entre os volumes contratados e os volumes medidos de energia.
 
-A UFPR apresenta um gasto anual com energia elétrica na ordem de dezenas de milhões de reais e este projeto pretente demonstrar a viabilidade em migrar para o Mercado Livre de Energia e os valores que poderão ser economizados no futuro.
+A UFPR apresenta um gasto com energia elétrica na ordem de dezenas de milhões de reais e este projeto pretente demonstrar a viabilidade em migrar para o Mercado Livre de Energia e os valores que poderão ser economizados no futuro.
 
 
 ## Perguntas de Pesquisa
@@ -150,21 +150,115 @@ Base 5 | https://github.com/alanrrv/IT304S_Grupo10_UFPR/tree/main/data/processed
 
 Ferramenta | Endereço na Web | Resumo descritivo e uso
 ----- | ----- | -----
-Ferramenta 1 | https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b | Previsão de séries temporais com uso de ARIMA
+Ferramenta 1 | https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html | Previsão de séries temporais com uso de SARIMAX
 
 # Metodologia
 ~~~
 <Abordagem/metodologia adotada, incluindo especificação de quais técnicas foram exploradas, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas.>
 ~~~
 
+A metodologia aplicada neste projeto foi o modelo de aprendizado de máquina chamado ARIMA (Autoregressive Integrated Moving Average Model). Após identificar a existência de sazonalidade nos dados, indenficou-se a oportunidade de aplicar uma variante do ARIMA, o SARIMAX (Seasonal Autoregressive Integrated Moving Average with external variables). Nessa variante do ARIMA, o modelo de aprendizagem de máquina foca em identificar sazonalidades anteriores e projetar no futuro.
 
+O intuito foi validar aplicação de um Modelo ARIMA na projeção da Demanda Ponta e Fora Ponta, Consumo e para o PLD Médio histórico. Para isso, o primeiro passo é decomposição dos dados em três parcelas, sendo elas a Tendência, Sazonalidade e Resíduos. 
+
+~~~
+from pylab import rcParams
+rcParams['figure.figsize'] = 18, 8
+decomposition = sm.tsa.seasonal_decompose(df_input, model='additive')
+fig = decomposition.plot()
+plt.show()
+~~~
+
+![alt text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/Decomposicao_curva_consumo.png)
+
+Após notar com clareza a existência da sazonalidade, validou-se a oportunidade de uso do modelo SARIMAX utilizando a variável em questão. É importante buscar os parâmetros para o modelo, para entender de forma mais profunda o que são esses parâmetros, recomenda-se a leitura do artigo a seguir:
+
+https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html
+
+Para encontrar esses ajustes dos parâmetros, ou pelo menos aqueles parâmetros que seriam os melhores para calcular, é necessário testar hipóteses. Para isso, utilizou-se uma rotina de cálculo com base no AIC (Akaike Information Critera), esse critério passa basicamente uma ideia geral de ajuste das projeções com base no histórico de dados. Para entender mais afundo o Akaike Information Critera na avaliação e as possibilides que podem ser exploradas com suas variantes próximas, recomenda-se a leitura a seguir:
+
+https://www.researchgate.net/figure/Goodness-of-fit-criteria-AIC-AICC-BIC-for-ARIMA-models_tbl1_330721947
+
+Compreendido a necessidade pela busca de um parâmetro ótimo que aponte para um bom ajuste das projeções ao histórico de dados, implementou-se a rotina a seguir e buscou os dados que apresentavam o menor critério AIC, para determinada parametrização do SARIMAX.
+
+~~~
+df = pd.DataFrame(columns=['PARAMETER(Y0,Y1,Y2)','PARAM_SEASON(Y0,Y1,Y2,12)','AIC'])
+
+for param in pdq:
+    for param_seasonal in seasonal_pdq:
+        try:
+            mod = sm.tsa.statespace.SARIMAX(df_input,
+                                            order=param,
+                                            seasonal_order=param_seasonal,
+                                            enforce_stationarity=False,
+                                            enforce_invertibility=False)
+            results = mod.fit()
+
+            df = df.append({'PARAMETER(Y0,Y1,Y2)': param,
+                            'PARAM_SEASON(Y0,Y1,Y2,12)': param_seasonal,
+                            'AIC': results.aic},
+                            ignore_index=True)
+            
+        except:
+            continue
+ 
+
+df.sort_values('AIC')
+~~~
+
+![alt text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/parametros_SARIMAX.jpeg)
+
+A partir dessa rotina, escolheu-se os parametrox 	(1, 1, 0)x(1, 1, 0, 12) pois eram aqueles que possuiam o menor AIC calculado. Com isso realizado um diagnóstico do modelo obtido.
+
+~~~
+results.plot_diagnostics(figsize=(16, 8), lags=8)
+plt.show()
+~~~
+
+![alt text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/diagnosticos.jpeg)
+
+Com base neste diagnóstico foi possível constatar que os possuem resíduos que variam de aproximadamente -1.5 até 1, possuem uma distribuição que pode ser aproximado normal e por fim seu correlograma indica que Março e Julho seriam os meses com maior tendencia de sazonalidade. Com essa constatação, validou-se os dados projetados a partir dos dados históricos.
+
+~~~
+pred = results.get_prediction(start=pd.to_datetime('2019-01-01'), dynamic=False)
+pred_ci = pred.conf_int()
+ax = df_input['2015':].plot(label='Observado')
+pred.predicted_mean.plot(ax=ax, label='Projeção com um passo a frente', alpha=.7, figsize=(14, 7))
+ax.fill_between(pred_ci.index,
+                pred_ci.iloc[:, 0],
+                pred_ci.iloc[:, 1], color='k', alpha=.2)
+ax.set_xlabel('Data')
+ax.set_ylabel('Consumo [kWh]')
+plt.legend()
+plt.show()
+~~~
+
+![alt text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/validacao.jpeg)
+
+A partir dessa validação foi possível observar uma tendência inicial dos dados em não convergir e causar erros elevados, porém o final da validação já indicava tendência de excesso de ajuste, o que poderia viciar a projeção. Ainda assim, com um cenário aberto buscamos verificar o comportamento final das projeções.
+
+~~~
+
+pred_uc = results.get_forecast(steps=24)
+pred_ci = pred_uc.conf_int()
+ax = df_input_orig.plot(label='Observado', figsize=(14, 7))
+pred_uc.predicted_mean.plot(ax=ax, label='Projeção')
+ax.fill_between(pred_ci.index,
+                pred_ci.iloc[:, 0],
+                pred_ci.iloc[:, 1], color='k', alpha=.25)
+                #39, color='k', alpha=.25)
+ax.set_title('Projeção com método ARIMA para Consumo 2021', fontsize = 30)
+ax.set_xlabel('Data')
+ax.set_ylabel('Consumo Total [kWh]')
+plt.legend()
+plt.show()
+~~~
+
+![alt text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/projecao_2021.jpeg)
+
+Visto a quantidade de dados utilizada para projeção foi pequena, validou-se por meio do teste final ds projeções que o modelo SARIMAX seria uma boa tentativa para explorar outras váriáveis.
 
 ## Detalhamento do Projeto
-~~~
-<Apresente aqui detalhes da análise. Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
-
-Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.>
-~~~
 
 Foram analisados dados de Consumo, Demanda e PLD. A projeção desses valores é fundamental para calcular a previsão de gastos com as faturas de energia. Segue parte do código usado para prever o preço do PLD até 2022:
 
@@ -200,6 +294,11 @@ Iniciamos considerando a análise de dados de 2 anos, porém, o modelo ARIMA uti
 Após isso, decidimos inserir mais 12 meses de dados para todas as unidades consumidoras, ficando 24 para dados de treino e 12 meses para teste.
 
 # Resultados e Discussão
+~~~
+<Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
+
+A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
+~~~
 
 1. Qual é a universidade pesquisada? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
 
@@ -261,7 +360,7 @@ Notícias divulgadas recentemente apresentaram o projeto da usina fotovoltaica c
 Fonte: https://www.ufpr.br/portalufpr/noticias/ufpr-inaugura-nesta-sexta-feira-a-maior-usina-fotovoltaica-em-universidade-publica-do-brasil/
 
 
-6. Gráficos com Demanda, Consumo de Energia e PLD Histórico.
+6. Gráficos com Demanda, Consumo de Energia.
 
 Demanda Registrada
 ---
