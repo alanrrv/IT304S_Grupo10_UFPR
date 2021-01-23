@@ -1,5 +1,7 @@
 # IT304S_Grupo10_UFPR
-Projeto de Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR
+# Projeto de Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR
+Disciplina de Mestrado: IT304S - Contratação de Energia para Grandes Consumidores
+Prof. Dr Luiz Carlos Pereira da Silva
 
 # Estrutura de Arquivos e Pastas
 
@@ -46,7 +48,7 @@ Qualquer mídia usada no projeto: vídeo, ilustrações, arquivos PDF, etc.
 
 
 # Projeto Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR
-# Project Migration to the Free Energy Market of Federal University of Parana - UFPR
+Project Migration to the Free Energy Market of Federal University of Paraná - UFPR
 
 # Descrição Resumida do Projeto
 
@@ -375,15 +377,17 @@ Considerando as projeções apresentadas anteriormente no desenvolvimento do ite
 
 Para cada categoria calculou-se a TIR no horizonte de investimentos de 1 ano, 3 anos e 15 anos tendo como receita (saving) a diferença entre a fatura das UCs no Mercado Livre e no Mercado Regulado. Em contrapartida, os custos modelados foram os referentes à Migração, Emolumento Adesão CCEE, Contribuição Associativa CCEE e Custo de Gestão. No longo prazo também se projetou um crescimento do preço da energia acima da Inflação (crescimento real) pois esta foi a realidade do setor brasileiro historicamente.  
 
-[Imagem Fluxo de caixa]
+![alt_texte](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/retorno_investimento.jpeg)
 
 Do fluxo de caixa fica evitente que os retornos projetados superam em muito o investimento despendido para a migração das 5 UCs. Este cenário, não usual nos investimentos tradicionais, gera uma TIR notadamente grande para todos os horizontes de investimento.
 
-[Tabela TIRs]
+ TIR | 15 anos	| 3 anos | 1 ano
+--- | ----- | ---- | ----
+TIR ACL - Conv	| 645,93%	| 644,27%	| 543,84%
+TIR ACL - I5	| 586,76%	| 584,81%	| 484,42%
+TIR ACL - I1	| 834,81%	| 833,72%	| 732,57%
 
 Desta maneira, foi feita uma análise de sensibilidade no modelo para identificar a partir de qual valor de energia o fluxo de caixa anual se aproximaria de zero (savings e custos se anulariam). Este valor foi encontrado como sendo R$ 311,50 / MWh, qualquer valor mais barato do que este é entendido como sendo positivo para a migração das UCs. 
-
-# XXXXXXXXXXX
 
 11. Qual a recomendação para uma contratação? (Características de contrato como volume, flexibilidade, modulação, sazonalização)
 
