@@ -354,7 +354,7 @@ As Unidades Consumidoras escolhidas representam juntas mais de 50% de todo consu
 
 8. Vale a pena migrar para o Mercado Livre? Como consumidor livre ou especial?
 
-Vale a pena migrar para o Mercado Livre como consumidor especial com desconto 100% na tarifa TUSD.
+Vale a pena migrar para o Mercado Livre como consumidor especial com desconto 50% na tarifa TUSD.
 
 
 9. Qual é a economia estimada?
