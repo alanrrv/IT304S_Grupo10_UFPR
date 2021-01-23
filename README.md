@@ -360,10 +360,28 @@ Considerando uma economia estimada em torno de 10% somente considerando a média
 
 9. Qual é a economia estimada?
 
-A economia estimada é em torno de 10% com base na média do histórico, podendo ser otimizada capturando sazonalidade na contração de energia.
+A economia estimada, calculada como sendo a diferença entre a fatura das UCs no Mercado Livre e no Mercado Regulado, é em torno de 11% com base na média do histórico, podendo ser otimizada capturando sazonalidade na contração de energia.
 
 
 10. Qual é o preço da energia a partir de quando compensa a migração?
+
+Inicialmente definiremos o conceito de Taxa Interna de Retorno (TIR). É a taxa de desconto que torna o Valor Atual Líquido do investimento igual a zero ao final do horizonte de planejamento do investimento a ser analisado. A TIR é uma técnica sofisticada de análise de investimentos sendo possivelmente a mais utilizada na avaliação de projetos econômicos. Essa Taxa Interna de Retorno deve ser comparada com a outra caixa denominada Taxa Mínima de Atratividade (TMA) (REBELATTO, Daisy Aparecida Do Nascimento. Projeto de investimento: Com estudo de caso completo na área de serviços. 1 ed. Barueri/SP: Editora Manole Ltda, 2004).
+
+O critério para aceitação ou não de um projeto no que se refere a Taxa Interna de Retorno é a comparação com a Taxa Mínima de Atratividade. Se a mesma for maior do que a TMA se aceita o projeto, ao passo que se esta for menor que a TMA se rejeita o projeto. Este critério de análise de investimento determina ser inviável um projeto cujo Taxa Interna de Retorno não seja superior a Taxa Mínima de Atratividade.
+
+Contudo é não há como estipularmos uma TMA para a UFPR pois desconhecemos o Custo de Oportunidade dos projetos que esta instituição possui como alternativas concorrentes à presente proposta de investimento. Por isso, apresentaremos a TIR deste projeto para três prazos distintos (1 ano, 3 anos e 15 anos) de modo que seja fácil para a instituição, que conhece bem sua própria TMA, avaliar a atratividade financeira da migração para o ACL.
+
+Considerando as projeções apresentadas anteriormente no desenvolvimento do item Metodologia acima, estimou-se para o ano de 2020 (com base no histórico dos dados de 2017 a 2019) as faturas das 5 Unidades Consumidoras mais representativas da UFPR nos cenários de manuntenção de seus contratos no ACR e migrando para o ACL nas categorias de contratação Convencional, Incentivada 50% e Incentivada 100%. 
+
+Para cada categoria calculou-se a TIR no horizonte de investimentos de 1 ano, 3 anos e 15 anos tendo como receita (saving) a diferença entre a fatura das UCs no Mercado Livre e no Mercado Regulado. Em contrapartida, os custos modelados foram os referentes à Migração, Emolumento Adesão CCEE, Contribuição Associativa CCEE e Custo de Gestão. No longo prazo também se projetou um crescimento do preço da energia acima da Inflação (crescimento real) pois esta foi a realidade do setor brasileiro historicamente.  
+
+[Imagem Fluxo de caixa]
+
+Do fluxo de caixa fica evitente que os retornos projetados superam em muito o investimento despendido para a migração das 5 UCs. Este cenário, não usual nos investimentos tradicionais, gera uma TIR notadamente grande para todos os horizontes de investimento.
+
+[Tabela TIRs]
+
+Desta maneira, foi feita uma análise de sensibilidade no modelo para identificar a partir de qual valor de energia o fluxo de caixa anual se aproximaria de zero (savings e custos se anulariam). Este valor foi encontrado como sendo R$ 311,50 / MWh, qualquer valor mais barato do que este é entendido como sendo positivo para a migração das UCs. 
 
 # XXXXXXXXXXX
 
@@ -371,9 +389,12 @@ A economia estimada é em torno de 10% com base na média do histórico, podendo
 
 Quando consdierado contratação no mercado de longo prazo, a economia utilizando a média histórica fica em torno de 10% e há redução de custo com gestão de contrato. Deverá ser sazonal (20%), de acordo com o apetite ao risco do mercado curto prazo. Uso de licitação (30%), compra de energia mais em conta.
 
+
 Projeção da contratação de Demanda
 ---
 ![alt_texte](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/orientacao_demanda_fora_ponta.jpeg)
+
+Adicionalmente, conforme detalhado na resposta à décima pergunta, recomenda-se uma contratação no ACL a valores menores do que R$ 311,50 / MWh.
 
 Quanto a demanda contratada Fora Ponta, com uso das projeções realizadas pelo modelo SARIMAX fica clara a tendência de redução do consumo para os próximos ciclos, de forma que manter a contratação como está até o presente momento, seria a orientação mais indicada para o futuro.
 
