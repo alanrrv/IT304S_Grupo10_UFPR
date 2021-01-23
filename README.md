@@ -70,7 +70,8 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 * `Rafael Augusto de Godoy Rosolen - RA 261565`
 
 # Vídeo do Projeto
-`<coloque um link para o vídeo apresentado o projeto.>`
+
+https://drive.google.com/file/d/15G5tUQVGFGVSKWdGnt-Y_1ALn_9rVvyI/view?usp=sharing
 
 # Introdução e Motivação
 
