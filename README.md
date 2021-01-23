@@ -100,7 +100,7 @@ A Universidade Federal do Paraná - UFPR com somatório de Demanda Contratada ac
 
 Até 1995 o mercado de energia no Brasil era basicamente estatal. A expansão do sistema necessitava de investimento público, ocorriam paralisações em obras, tarifas defasadas e os investimentos eram insuficientes. Entre 1995 e 2001 o governo federal realizou privatizações no setor elétrico, criou instituições como ANEEL, ONS, CCEE entre outras que viabilizaram a partir de 2001 a adoção de ambientes de contratação de energia que podem ser regulado (ACR) com agentes de geração e de distribuição de energia ou livre (ACL) com geradores, distribuidores, comercializadores, importadores e exportadores, além dos consumidores livres e especiais. Há ainda o mercado de curto prazo, também conhecido como mercado de diferenças, no qual se promove o ajuste entre os volumes contratados e os volumes medidos de energia.
 
-A UFPR apresenta um gasto com energia elétrica na ordem de dezenas de milhões de reais e este projeto pretente demonstrar a viabilidade em migrar para o Mercado Livre de Energia e os valores que poderão ser economizados no futuro.
+A UFPR apresenta um gasto anual com energia elétrica na ordem de dezenas de milhões de reais e este projeto pretente demonstrar a viabilidade em migrar para o Mercado Livre de Energia e os valores que poderão ser economizados no futuro.
 
 
 ## Perguntas de Pesquisa
