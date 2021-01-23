@@ -44,27 +44,6 @@ Se for código em linguagem de programação, tente organizá-lo de forma que se
 
 Qualquer mídia usada no projeto: vídeo, ilustrações, arquivos PDF, etc.
 
-# Modelo para Apresentação do Projeto
-
-Este é um guia de como produzir documentação em Markdown. Para entender como criar documentos em Markdown no Github, veja o material/vídeo:
-[Guia de Uso do Markdown](https://github.com/mc-unicamp/oficinas/tree/master/docs).
-
-Vide detalhes sobre o Markdown em: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-E mais especificamente sobre tabelas em: [Organizing information with tables](https://help.github.com/en/articles/organizing-information-with-tables)
-
-O projeto pode ser apresentado em uma das possíveis formas:
-1. texto completo no arquivo `README.md`;
-2. texto no arquivo `README.md` e seção de Resultados e Discussão dentro de um notebook Jupyter ou equivalente -- nesse caso, deve haver um link para se abrir o notebook na respectiva seção;
-3. texto completo dentro de um notebook Jupyter ou equivalente -- nesse caso, o arquivo README.md deve conter pelo menos: o título, os componentes da equipe e um link para o notebook.
-
-Só será aceito o uso de notebook Jupyter (ou equivalente) para apresentação do projeto ou parte dele (formas 2 e 3), se for possível executá-lo online a partir de um link sem instalação local de software.
-
-Para todos os casos, a estrutura Markdown proposta abaixo poderá ser usada, dado que os notebooks aceitam Markdown.
-
-Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-# Modelo para Apresentação do Projeto
 
 # Projeto Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR
 # Project Migration to the Free Energy Market of Federal University of Parana - UFPR
@@ -90,9 +69,6 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 `<coloque um link para o vídeo apresentado o projeto.>`
 
 # Introdução e Motivação
-~~~
-<Descrição do tema do projeto, incluindo motivação, contexto gerador e caracterização do problema. A introdução também pode apresentar iniciativas correlatas para lidar com o problema (não obrigatório) e deve introduzir de forma mais detalhada que o resumo a solução proposta e resultados alcançados. Aqui também são apresentadas as seções do projeto.>
-~~~
 
 O Mercado Livre de Energia tem se tornado atrativo para consumidores de energia de médio e grande porte como é o caso da maioria das universidades públicas do país. A adesão ao Mercado Livre (ML) possibilita alcançar reduções de até 30% nas faturas de energia.
 
@@ -153,9 +129,6 @@ Ferramenta | Endereço na Web | Resumo descritivo e uso
 Ferramenta 1 | https://www.statsmodels.org/stable/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html | Previsão de séries temporais com uso de SARIMAX
 
 # Metodologia
-~~~
-<Abordagem/metodologia adotada, incluindo especificação de quais técnicas foram exploradas, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas.>
-~~~
 
 A metodologia aplicada neste projeto foi o modelo de aprendizado de máquina chamado ARIMA (Autoregressive Integrated Moving Average Model). Após identificar a existência de sazonalidade nos dados, indenficou-se a oportunidade de aplicar uma variante do ARIMA, o SARIMAX (Seasonal Autoregressive Integrated Moving Average with external variables). Nessa variante do ARIMA, o modelo de aprendizagem de máquina foca em identificar sazonalidades anteriores e projetar no futuro.
 
