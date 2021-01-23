@@ -200,11 +200,6 @@ Iniciamos considerando a análise de dados de 2 anos, porém, o modelo ARIMA uti
 Após isso, decidimos inserir mais 12 meses de dados para todas as unidades consumidoras, ficando 24 para dados de treino e 12 meses para teste.
 
 # Resultados e Discussão
-~~~
-<Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
-
-A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
-~~~
 
 1. Qual é a universidade pesquisada? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
 
@@ -266,7 +261,7 @@ Notícias divulgadas recentemente apresentaram o projeto da usina fotovoltaica c
 Fonte: https://www.ufpr.br/portalufpr/noticias/ufpr-inaugura-nesta-sexta-feira-a-maior-usina-fotovoltaica-em-universidade-publica-do-brasil/
 
 
-6. Gráficos com Demanda, Consumo de Energia.
+6. Gráficos com Demanda, Consumo de Energia e PLD Histórico.
 
 Demanda Registrada
 ---
