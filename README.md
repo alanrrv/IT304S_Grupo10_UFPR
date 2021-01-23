@@ -271,11 +271,6 @@ Iniciamos considerando a análise de dados de 2 anos, porém, o modelo ARIMA uti
 Após isso, decidimos inserir mais 12 meses de dados para todas as unidades consumidoras, ficando 24 para dados de treino e 12 meses para teste.
 
 # Resultados e Discussão
-~~~
-<Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
-
-A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?>
-~~~
 
 1. Qual é a universidade pesquisada? Onde fica? Quantos alunos? Qual grupo de consumidores esta universidade está inserida?
 
@@ -345,11 +340,11 @@ Demanda Registrada
 
 Consumo Registrado
 ---
-![alt_texte](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/Consumo_registrado.png)
+![alt_text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/Consumo_registrado.png)
 
 PLD Histórico
 ---
-![alt_texte](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/PLD_historico.png)
+![alt_text](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/PLD_historico.png)
 
 
 7. Outras análises que os alunos considerem pertinentes.
@@ -359,7 +354,7 @@ As Unidades Consumidoras escolhidas representam juntas mais de 50% de todo consu
 
 8. Vale a pena migrar para o Mercado Livre? Como consumidor livre ou especial?
 
-Considerando uma economia estimada em torno de 10% somente considerando a média 
+Vale a pena migrar para o Mercado Livre como consumidor especial com desconto 100% na tarifa TUSD.
 
 
 9. Qual é a economia estimada?
@@ -390,6 +385,7 @@ TIR ACL - I5	| 586,76%	| 584,81%	| 484,42%
 TIR ACL - I1	| 834,81%	| 833,72%	| 732,57%
 
 Desta maneira, foi feita uma análise de sensibilidade no modelo para identificar a partir de qual valor de energia o fluxo de caixa anual se aproximaria de zero (savings e custos se anulariam). Este valor foi encontrado como sendo R$ 311,50 / MWh, qualquer valor mais barato do que este é entendido como sendo positivo para a migração das UCs. 
+
 
 11. Qual a recomendação para uma contratação? (Características de contrato como volume, flexibilidade, modulação, sazonalização)
 
