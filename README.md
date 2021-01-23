@@ -15,7 +15,8 @@ Foi adotada a estrutura proposta pelo [Cookiecutter Data Science](https://driven
 │   ├── external       <- dados de terceiros
 │   ├── interim        <- dados intermediários, e.g., resultado de transformação
 │   ├── processed      <- dados finais usados para a modelagem
-│   └── raw            <- dados originais sem modificações
+│   ├── raw            <- dados originais sem modificações
+│   └── images         <- imagens utilizadas
 │
 ├── notebooks          <- Jupyter notebooks ou equivalentes
 │
