@@ -1,6 +1,7 @@
 # IT304S_Grupo10_UFPR
 # Projeto de Migração para o Mercado Livre de Energia da Universidade Federal do Paraná - UFPR
 Disciplina de Mestrado: IT304S - Contratação de Energia para Grandes Consumidores
+
 Prof. Dr Luiz Carlos Pereira da Silva
 
 # Estrutura de Arquivos e Pastas
