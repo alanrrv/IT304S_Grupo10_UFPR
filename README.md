@@ -389,11 +389,14 @@ Desta maneira, foi feita uma análise de sensibilidade no modelo para identifica
 
 Quando consdierado contratação no mercado de longo prazo, a economia utilizando a média histórica fica em torno de 10% e há redução de custo com gestão de contrato. Deverá ser sazonal (20%), de acordo com o apetite ao risco do mercado curto prazo. Uso de licitação (30%), compra de energia mais em conta.
 
+
+Projeção da contratação de Demanda
+---
+![alt_texte](https://github.com/alanrrv/IT304S_Grupo10_UFPR/blob/main/data/images/orientacao_demanda_fora_ponta.jpeg)
+
 Adicionalmente, conforme detalhado na resposta à décima pergunta, recomenda-se uma contratação no ACL a valores menores do que R$ 311,50 / MWh.
 
-12. Outras análises
-
-
+Quanto a demanda contratada Fora Ponta, com uso das projeções realizadas pelo modelo SARIMAX fica clara a tendência de redução do consumo para os próximos ciclos, de forma que manter a contratação como está até o presente momento, seria a orientação mais indicada para o futuro.
 
 # Conclusões
 
