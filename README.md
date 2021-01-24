@@ -71,7 +71,8 @@ Energy contracting in the free market has demonstrated a financial advantage ove
 
 # Vídeo do Projeto
 
-https://drive.google.com/file/d/15G5tUQVGFGVSKWdGnt-Y_1ALn_9rVvyI/view?usp=sharing
+https://youtu.be/SNs5CwIzS9w
+
 
 # Introdução e Motivação
 
